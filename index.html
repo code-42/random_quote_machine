@@ -9,44 +9,40 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- Optional theme -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet"><!-- MY CUSTOM CSS THAT OVERRIDES BOOTSTRAP -->
 	<link href="css/index.css" rel="stylesheet">
-	<link href="css/navbar_contact.css" rel="stylesheet">
+	
 	<title>Random Quote Machine</title>
 </head>
 <body>
-	<header>
-		NAVBAR GOES HERE
-	</header>
-	<main>
-		<article>
-			...
-		</article>
-		<nav>
-			...
-		</nav>
-		<aside>
-			...
-		</aside>
 		<div class="container-fluid">
-			<div class="text-center">
-				<h1>Random Quote Machine</h1><br>
-				<p>Some of my favorite quotes</p><button class="btn btn-default" type="submit">New Quote</button>
-			</div>
-			<div class="quotes text-center">
-				<span class="quote"></span><br>
-				<span class="author"></span>
+			<div>
+				<div class="text-center">
+					<h1>Random Quote Machine</h1><br>
+					<p>Some of my favorite quotes</p>
+					<button class="btn btn-default" id="new_quote" type="submit">New Quote</button> 
+
+					<a class="twitter-share-button btn btn-default" data-size="large" id="tweet">
+                    Tweet</a>
+
+				</div>
+				<div class="quote_box text-center">
+					<span class="quote">&nbsp;</span><br>
+					<span class="author">&nbsp;</span>
+				</div>
 			</div>
 		</div>
-	</main><!-- FOOTER -->
+
+    <!-- FOOTER -->
 	<footer>
-		<p class="pull-right"><a href="#">Back to top</a></p>
-		<p>&copy; 2017 Edward Dupre &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+		<p>&copy; 2017 Edward Dupre &middot; <a href="#">Privacy</a> &middot; <a href="#">Back to top</a></p>
 	</footer><!-- Bootstrap core JavaScript -->
 	<!-- Placed at the end of the document so the pages load faster -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	</script> 
-	<script src="js/index.js">
+	<script src="js/js.js">
 	</script>
+
 </body>
 </html>
