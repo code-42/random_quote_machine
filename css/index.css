@@ -7,9 +7,18 @@ footer{
   text-align: center;
 }
 
-/*quote_box{*/
-/*  text-align: center;*/
-/*  border: 2px black solid;*/
-/*  width: 200px;*/
-/*  height: 200px;*/
-/*}*/
+.quotes{
+  margin-top:20px;
+  background-color:#e3deee;
+  width: 33%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom: 10px;
+  border-color:white;
+  border-style:solid;
+  border-radius:10px;
+  padding:20px;
+  height:auto;
+  color:blue;
+  font-size:20px;
+}
