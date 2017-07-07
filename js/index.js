@@ -3,7 +3,6 @@ $(document).ready(function(){
     
 function getQuote(){
 
-    // var url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
     $.getJSON(url, function(data){
        $(".quote").html('"'+data.quoteText+'"');
        $(".author").html(' - '+data.quoteAuthor);
@@ -19,11 +18,9 @@ function getQuote(){
     $("#tweet").on("click", function(){
         $.getJSON(url, function(data){
         if(!data.quoteAuthor){
-            data.quoteAuthor = "Author unknown";
+            data.quoteAuthor = "unknown";
         }
-        console.log(data.quoteText + ' - Author:  '+ data.quoteAuthor);
-           window.open("https://twitter.com/intent/tweet?text=" + data.quoteText + ' - Author:  '+ data.quoteAuthor, "_self");
+        window.open("https://twitter.com/intent/tweet?text=" + data.quoteText + ' - Author:  '+ data.quoteAuthor, "_self");
         });
     });
-
 });
