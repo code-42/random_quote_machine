@@ -23,4 +23,18 @@ function getQuote(){
         window.open("https://twitter.com/intent/tweet?text=" + data.quoteText + ' - Author:  '+ data.quoteAuthor, "_self");
         });
     });
+    
+    // youtube https://www.youtube.com/watch?v=OdtOk8keCs4  @ 6.27
+    function getInfo(){
+        FB.api('/me', 'GET', {fields: 'first_name,last_name,id'}, function(response){
+            document.getElementById('status').innerHTML = response.id;
+        });
+    }
+    
+    function post(){
+        FB.api('/me/feed', 'post', {message: 'my first status...'}, function(response){
+            document.getElementById('status').innerHTML = response.id;
+        });
+    }
+    
 });
